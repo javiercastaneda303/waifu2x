@@ -256,6 +256,10 @@ For a workaround, you can mount a host volume to the `CUDA_CACHE_PATH`, for inst
 ```
 nvidia-docker run -v $PWD/ComputeCache:/root/.nv/ComputeCache waifu2x th waifu2x.lua --help
 ```
+en el caso de usar windows el enlace es el siguiente
+https://github.com/lltcggie/waifu2x-caffe
+
+
 waifu2x-Caffe
 La solución: una versión nativa para Windows llamada waifu2x-Caffe. La app nativa con interfaz gráfica fue creada por el mismo usuario de GitHub, y aunque todo el proyecto está en japonés, el programa soporta varios idiomas, incluyendo inglés y español.
 
