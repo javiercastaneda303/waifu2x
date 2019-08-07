@@ -1,4 +1,4 @@
-# waifu2x
+# waifu2x  al final tengo un texto introducido
 
 Image Super-Resolution for Anime-style art using Deep Convolutional Neural Networks.
 And it supports photo.
@@ -256,3 +256,23 @@ For a workaround, you can mount a host volume to the `CUDA_CACHE_PATH`, for inst
 ```
 nvidia-docker run -v $PWD/ComputeCache:/root/.nv/ComputeCache waifu2x th waifu2x.lua --help
 ```
+waifu2x-Caffe
+La solución: una versión nativa para Windows llamada waifu2x-Caffe. La app nativa con interfaz gráfica fue creada por el mismo usuario de GitHub, y aunque todo el proyecto está en japonés, el programa soporta varios idiomas, incluyendo inglés y español.
+
+Anotacion 2019 07 31 165029
+Puedes descargar la última versión desde su página de lanzamientos en GitHub. La más reciente es la 1.2.0.2 que fue liberada en enero de 2019. El archivo zip contiene todo lo necesario y no es necesario que instales nada, pues funciona como app portable.
+
+Puedes descomprimir el paquete en el lugar de tu elección y luego solo necesitas ejecutar waifu2x-caffe.exe dentro de la carpeta del programa. Una vez hecho esto quizás la interfaz te parezca algo intimidante dada la gran cantidad de opciones que tiene.
+
+Waifu2x Caffe
+Sin embargo, para la tarea más básica que es simplemente duplicar el tamaño de una imagen, todos los ajustes establecidos por defecto, funcionan perfectamente. Solo es cuestión de que navegues por tus carpetas, elijas una imagen y luego presiones el botón "Start".
+
+La carpeta de salida en la que se va a guardar tu imagen duplicada se elige automáticamente, es la misma del origen de la imagen inicial. Si quieres jugar con las opciones puedes cambiar el formato de salida de PNG a JPG, Webp, BMP, y varios más.
+
+Imagen Duplicada
+Ilustración agrandada con waifu2x-caffe
+Otro dato importantes es el Magnification size (rango de agrandamiento), por defecto es 2.000000, es decir, dos veces el tamaño de la imagen. Si lo cambias a 1.50000, tendrás una imagen con 1.5 veces más resolución. Si lo pones por encima de 2, puedes obtener resultados menos aceptables, después de todo, no es magia.
+
+En la sección Conversion Mode puedes elegir si quieres agrandar y quitar el ruido, o solo una de esas dos cosas. También puedes elegir el grado de ruido a eliminar. Si quieres aprender más detalles sobre el resto de opciones, puedes revisar la documentación, aunque deberás usar un traductor online salvo que sepas japonés.
+
+Lo único malo es que a pesar de que la interfaz dice soportar español, en todas las versiones que descargué he tenido que usarlo en inglés porque no aparece la opción en el menú.
